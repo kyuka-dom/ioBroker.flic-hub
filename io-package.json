@@ -1,0 +1,72 @@
+{
+    "common": {
+        "name": "flic-hub",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "flic",
+        "titleLang": {
+            "en": "flic",
+            "de": "flic",
+            "ru": "флик",
+            "pt": "flic",
+            "nl": "flik",
+            "fr": "flic",
+            "it": "flic",
+            "es": "flic",
+            "pl": "flic",
+            "zh-cn": "轻弹"
+        },
+        "desc": {
+            "en": "Supports integration of the flic buttons using the flic hub",
+            "de": "Unterstützt die Integration der Flic-Buttons über den Flic-Hub",
+            "ru": "Поддерживает интеграцию кнопок flic с помощью концентратора flic",
+            "pt": "Suporta integração dos botões flic usando o hub flic",
+            "nl": "Ondersteunt integratie van de flic-knoppen met behulp van de flic-hub",
+            "fr": "Prend en charge l'intégration des boutons flic à l'aide du hub flic",
+            "it": "Supporta l'integrazione dei pulsanti Flic utilizzando l'hub Flic",
+            "es": "Admite la integración de los botones flic utilizando el concentrador flic",
+            "pl": "Obsługuje integrację przycisków flic za pomocą koncentratora flic",
+            "zh-cn": "支持使用 flic hub 集成 flic 按钮"
+        },
+        "authors": ["Dom <dom@bugger.ch>"],
+        "keywords": ["flic", "buttons"],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "flic-hub.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/kyuka-dom/ioBroker.flic-hub/main/admin/flic-hub.png",
+        "readme": "https://github.com/kyuka-dom/ioBroker.flic-hub/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "iot-systems",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "push",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "hubIP":  "",
+        "hubPort": 30000
+    },
+    "objects": [],
+    "instanceObjects": []
+}
