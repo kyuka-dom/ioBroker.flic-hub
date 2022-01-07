@@ -10,6 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import I18n from "@iobroker/adapter-react/i18n";
+import Alert from "@material-ui/lab/Alert";
 
 const styles = (): Record<string, CreateCSSProperties> => ({
     input: {
@@ -128,11 +129,15 @@ class Settings extends React.Component<SettingsProps, SettingsState> {
 
     render() {
         return (
-            <form className={this.props.classes.tab}>
-                {this.renderCheckbox("option1", "option1")}
+            <div>
                 <br />
-                {this.renderInput("option2", "option2", "text")}
-            </form>
+                <Alert color="info">{I18n.t("howto")}</Alert>
+                <form className={this.props.classes.tab}>
+                    {this.renderInput("hubIP", "hubIP", "text")}
+                    <br />
+                    {this.renderInput("hubPort", "hubPort", "text")}
+                </form>
+            </div>
         );
     }
 }

@@ -1,5 +1,6 @@
 {
     "flic-hub adapter settings": "Adapter settings for flic-hub",
-    "option1": "option1",
-    "option2": "option2"
+    "hubIP": "flic hub ip address",
+    "hubPort": "flic hub tcp port (default = 30000)",
+    "howto": "Not much configuration is required here. The ip address can be left empty since all hubs are autodiscovered. Please read the readme for the mandatory configuration of the hub SDK"
 }
